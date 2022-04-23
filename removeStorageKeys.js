@@ -19,5 +19,4 @@ function removeStorageItem() {
 
     }
 }
-
 removeStorageItem();

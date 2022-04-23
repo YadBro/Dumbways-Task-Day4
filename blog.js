@@ -320,5 +320,4 @@ function getDistanceTime(time, time2) {
 
 //     }
 // }
-
 // removeStorageItem();
