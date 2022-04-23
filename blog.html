@@ -1,0 +1,262 @@
+<html>
+
+<head>
+    <title>My Project</title>
+    <script src="https://kit.fontawesome.com/f4074077c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav>
+        <div class="left">
+            <a href="https://dumbways.id/" target="_blank">
+                <img src="assets/img/dumbways_logo.png" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#myproject">My Project</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <div class="content-body">
+
+        <!-- MY PROJECT FORM START -->
+        <div class="container-form">
+            <h1>ADD MY PROJECT</h1>
+            <form onsubmit="addBlog(event)" class="form">
+                <div class="" id="projectNameInput">
+                    <label for="projectName">Project Name</label>
+                    <input type="text" id="projectName">
+                </div>
+                <div class="input-group" id="projectDateInput">
+                    <div class="start">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate">
+                    </div>
+                    <div class="end">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate">
+                    </div>
+                </div>
+                <div class="" id="projectDescriptionInput">
+                    <label for="description">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+                <div class="technologies-checkbox" id="projectTechnologiesInput">
+                    <label for="technologies">Technologies</label>
+                    <div class="checkbox-input">
+                        <div class="checkbox-left">
+                            <input type="checkbox" name="nodeJsTechnology" id="technologiesnode"
+                                value="nodeJsTechnology">
+                            <p>Node Js</p><br>
+                            <input type="checkbox" name="reactJsTechnology" id="technologies" value="reactJsTechnology">
+                            <p>React Js</p>
+                        </div>
+                        <div class="checkbox-right">
+                            <input type="checkbox" name="nextJsTechnology" id="technologies" value="nextJsTechnology">
+                            <p>Next Js</p><br>
+                            <input type="checkbox" name="typeScriptTechnology" id="technologies"
+                                value="typeScriptTechnology">
+                            <p>TypeScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-file" id="projectImageInput">
+                    <label for="image">Upload Image</label>
+                    <input type="file" id="fileImage">
+                </div>
+                <div class="button">
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- MY PROJECT FORM END -->
+
+        <!-- MY PROJECTS CONTENT START -->
+        <div class="myproject-content">
+            <br><br><br id="myproject">
+            <h1>MY PROJECT</h1>
+            <div class="projects-list">
+
+
+                <div class="project-card">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/1280x1080?webdesign" alt="Card Image">
+                        <div class="card-title">
+                            <h3><a href="#" onclick="projectDetail(event)">Web Application - 2022</a></h3>
+                        </div>
+                        <div class="card-duration">
+                            <small>duration: 2 bulan</small>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae ipsa itaque
+                                ipsam
+                                quisquam sed quas quis nisi explicabo recusandae.</p>
+                        </div>
+                        <div class="logos">
+                            <div class="img-icon">
+                                <img src="assets/img/node-js.png" id="nodeJsIcon" alt="nodeJsIcon">
+                                <img src="assets/img/react-js.png" id="reactJsIcon" alt="reactJsIcon">
+                                <img src="assets/img/next-js.png" id="nextJsIcon" alt="nextJsIcon">
+                                <img src="assets/img/typescript.png" id="typeScriptIcon" alt="typeScriptIcon">
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="edit-button">edit</button>
+                            <button class="delete-button">delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/1280x1080?programming" alt="Card Image">
+                        <div class="card-title">
+                            <h3><a href="#">Web Application - 2022</a></h3>
+                        </div>
+                        <div class="card-duration">
+                            <small>duration: 3 bulan</small>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae ipsa itaque
+                                ipsam
+                                quisquam sed quas quis nisi explicabo recusandae.</p>
+                        </div>
+                        <div class="logos">
+                            <div class="img-icon">
+                                <img src="assets/img/node-js.png" id="nodeJsIcon" alt="nodeJsIcon">
+                                <img src="assets/img/react-js.png" id="reactJsIcon" alt="reactJsIcon">
+                                <img src="assets/img/next-js.png" id="nextJsIcon" alt="nextJsIcon">
+                                <img src="assets/img/typescript.png" id="typeScriptIcon" alt="typeScriptIcon">
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="edit-button">edit</button>
+                            <button class="delete-button">delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/1280x1080?developer" alt="Card Image">
+                        <div class="card-title">
+                            <h3><a href="#">Web Application - 2022</a></h3>
+                        </div>
+                        <div class="card-duration">
+                            <small>duration: 1 bulan</small>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae ipsa itaque
+                                ipsam
+                                quisquam sed quas quis nisi explicabo recusandae.</p>
+                        </div>
+                        <div class="logos">
+                            <div class="img-icon">
+                                <img src="assets/img/node-js.png" id="nodeJsIcon" alt="nodeJsIcon">
+                                <img src="assets/img/react-js.png" id="reactJsIcon" alt="reactJsIcon">
+                                <img src="assets/img/next-js.png" id="nextJsIcon" alt="nextJsIcon">
+                                <img src="assets/img/typescript.png" id="typeScriptIcon" alt="typeScriptIcon">
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="edit-button">edit</button>
+                            <button class="delete-button">delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/1280x1080?programming" alt="Card Image">
+                        <div class="card-title">
+                            <h3><a href="#">Web Application - 2022</a></h3>
+                        </div>
+                        <div class="card-duration">
+                            <small>duration: 1 bulan</small>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae ipsa itaque
+                                ipsam
+                                quisquam sed quas quis nisi explicabo recusandae.</p>
+                        </div>
+                        <div class="logos">
+                            <div class="img-icon">
+                                <img src="assets/img/node-js.png" id="nodeJsIcon" alt="nodeJsIcon">
+                                <img src="assets/img/react-js.png" id="reactJsIcon" alt="reactJsIcon">
+                                <img src="assets/img/next-js.png" id="nextJsIcon" alt="nextJsIcon">
+                                <img src="assets/img/typescript.png" id="typeScriptIcon" alt="typeScriptIcon">
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="edit-button">edit</button>
+                            <button class="delete-button">delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/1280x1080?developer" alt="Card Image">
+                        <div class="card-title">
+                            <h3><a href="#">Web Application - 2022</a></h3>
+                        </div>
+                        <div class="card-duration">
+                            <small>duration: 3 bulan</small>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae ipsa itaque
+                                ipsam
+                                quisquam sed quas quis nisi explicabo recusandae.</p>
+                        </div>
+                        <div class="logos">
+                            <div class="img-icon">
+                                <img src="assets/img/node-js.png" id="nodeJsIcon" alt="nodeJsIcon">
+                                <img src="assets/img/react-js.png" id="reactJsIcon" alt="reactJsIcon">
+                                <img src="assets/img/next-js.png" id="nextJsIcon" alt="nextJsIcon">
+                                <img src="assets/img/typescript.png" id="typeScriptIcon" alt="typeScriptIcon">
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="edit-button">edit</button>
+                            <button class="delete-button">delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/1280x1080?webdesign" alt="Card Image">
+                        <div class="card-title">
+                            <h3><a href="#">Web Application - 2022</a></h3>
+                        </div>
+                        <div class="card-duration">
+                            <small>duration: 2 bulan</small>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae ipsa itaque
+                                ipsam
+                                quisquam sed quas quis nisi explicabo recusandae.</p>
+                        </div>
+                        <div class="logos">
+                            <div class="img-icon">
+                                <img src="assets/img/node-js.png" id="nodeJsIcon" alt="nodeJsIcon">
+                                <img src="assets/img/react-js.png" id="reactJsIcon" alt="reactJsIcon">
+                                <img src="assets/img/next-js.png" id="nextJsIcon" alt="nextJsIcon">
+                                <img src="assets/img/typescript.png" id="typeScriptIcon" alt="typeScriptIcon">
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="edit-button">edit</button>
+                            <button class="delete-button">delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MY PROJECTS CONTENT END -->
+    <script src="blog.js"></script>
+</body>
+
+</html>

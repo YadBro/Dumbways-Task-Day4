@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav>
+        <div class="left">
+            <a href="https://dumbways.id/" target="_blank">
+                <img src="assets/img/dumbways_logo.png" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- FORM CONTACT START -->
+    <div class="container-form">
+        <h1>GET IN TOUCH</h1>
+        <form class="form">
+            <div id="nameInput">
+                <label for="name" id="nameLabel">Name</label>
+                <input id="name" type="text">
+            </div>
+            <div id="emailInput">
+                <label for="email" id="emailLabel">Email</label>
+                <input id="email" type="email">
+            </div>
+            <div id="phoneInput">
+                <label for="phone" id="phoneLabel">Phone Number</label>
+                <input id="phone" type="tel">
+            </div>
+            <div id="subjectInput">
+                <label for="subject" id="subjectLabel">Subject</label>
+                <select id="subject">
+                    <option selected hidden></option>
+                    <option value="Let's Talk">Let's Talk</option>
+                    <option value="Let's Collaboration">Let's Collaboration</option>
+                    <option value="I'am Hiring">I'am Hiring</option>
+                </select>
+            </div>
+            <div id="messageInput">
+                <label for="message" id="messageLabel">Your Message</label>
+                <textarea id="message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- FORM CONTACT END -->
+    <script src="contact.js"></script>
+</body>
+
+</html>
